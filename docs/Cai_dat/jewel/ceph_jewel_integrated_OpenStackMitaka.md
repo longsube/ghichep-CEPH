@@ -209,7 +209,7 @@ crudini --set /etc/glance/glance-api.conf glance_store rbd_store_chunk_size 8
 ### 4.2. Cấu hình `cinder.conf` để lưu volume và volume backup xuống Ceph
 	
 ```
-crudini --set /etc/glance/cinder.conf DEFAULT notification_driver messagingv2
+crudini --set /etc/cinder/cinder.conf DEFAULT notification_driver messagingv2
 ```
 
 - Khai báo kết nối tới Glance để lấy image (sử dụng Glance API v2)
